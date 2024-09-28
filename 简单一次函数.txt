@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    int x,b;
+
+    scanf("%d",&x);
+   b=3*x*x*x+2*x*x+x+1;
+    printf("%d",b);
+
+    return 0;
+}

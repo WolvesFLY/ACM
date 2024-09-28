@@ -1,0 +1,17 @@
+1	#include<stdio>
+2	int main(){
+3	int map=0;
+4.	double pi
+5	scanf("%d",&pi);
+6	double map=0;
+7	printf("%lf\n",pi*pi*2);
+8	double xx=sqrt(2);
+9	return 0;
+10	 }
+语法错误有
+1中头文件应为stdio.h;
+4语句末尾缺分号;
+6重复定义变量;
+7语句末尾分号为全角字符(中文);
+8使用sqrt()函数但缺少math.h头文件;
+ps.5中的占位符与实际数据类型不符,不是语法错误,不影响编译,但影响输出。

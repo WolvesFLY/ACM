@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main()
+{
+    int T;
+    scanf("%d",&T);
+    int s[T];
+    for(int i=0; i<T; i++)
+    {
+        long long a,b,c;
+        scanf("%lld%lld%lld",&a,&b,&c);
+
+        s[i]=c+a*b;
+    }
+    for (int j=0; j<T; j++)
+    {
+        if(s[j]>=100)
+        {
+            printf("Yes\n");}
+            else
+               {
+
+               printf("No\n");
+            }
+
+    }
+    return 0;
+
+}

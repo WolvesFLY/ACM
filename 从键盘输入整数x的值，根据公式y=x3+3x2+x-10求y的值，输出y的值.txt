@@ -1,0 +1,10 @@
+#include<stdio.h>
+void main()
+{
+
+   long long x,y;/*这里数据长度太长，就要用longlong和lld.*/
+    scanf("%lld",&x);
+    y=x*x*x+3*x*x+x-10;
+    printf("%lld",y);
+
+}

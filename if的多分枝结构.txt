@@ -1,0 +1,48 @@
+#include<stdio.h>
+int main()
+{
+
+   int a;
+    scanf("%d",&a);
+    if(a==100)
+        printf("S");
+       else if(90<=a<=99)
+        printf("A");
+       else if(80<=a<=89)
+        printf("B");
+       else if(70<=a<=79)
+        printf("C");
+       else if(60<=a<=69)
+        printf("D");
+       else if(0<=a<=59)
+        printf("E");
+
+
+return 0;
+}我这个错哪了
+你的代码存在以下问题：
+条件判断错误：在 C 语言中，不能像你这样连续使用关系运算符来判断一个值是否在某个区间内。比如 90<=a<=99这种写法是错误的。应该写成 a >= 90 && a <= 99 的形式。
+以下是修正后的代码：
+c
+复制
+#include <stdio.h>
+
+int main() {
+    int a;
+    scanf("%d", &a);
+    if (a == 100) {
+        printf("S");
+    } else if (a >= 90 && a <= 99) {
+        printf("A");
+    } else if (a >= 80 && a <= 89) {
+        printf("B");
+    } else if (a >= 70 && a <= 79) {
+        printf("C");
+    } else if (a >= 60 && a <= 69) {
+        printf("D");
+    } else if (a >= 0 && a <= 59) {
+        printf("E");
+    }
+
+    return 0;
+}

@@ -1,0 +1,53 @@
+#include<stdio.h>
+int main()
+{
+    
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    if (a<b)
+    {
+        int e=a;
+        a=b;
+        b=e;
+
+    }
+    if (a<c)
+    {
+        int e=a;
+        a=c;
+        c=e;
+
+    }
+    if (a<d)
+    {
+        int e=a;
+        a=d;
+        d=e;
+
+    }
+    if (b<c)
+    {
+        int e=b;
+        b=c;
+        c=e;
+
+    }
+    if (b<d)
+    {
+        int e=b;
+        b=d;
+        d=e;
+
+    }
+    if (c<d)
+    {
+        int e=c;
+        c=d;
+        d=e;
+
+    }
+
+
+    printf("%d %d %d %d",a,b,c,d);
+
+    return 0;
+}

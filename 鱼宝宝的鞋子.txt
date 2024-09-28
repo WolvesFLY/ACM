@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int t,a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    if(a==1&&b==1&&c==1)
+    {
+        printf("No");
+    }
+    else if(a==0&&b==0&&c==0)
+    {
+        printf("No");
+    }
+    else
+    {
+        printf("Yes");
+    }
+    return 0;
+}

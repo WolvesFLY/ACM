@@ -1,0 +1,23 @@
+注意数据的长度，sum要用long long 不然加大了，会报错
+#include<stdio.h>
+
+int main()
+{
+
+    int a;定义的时候注意初始量
+    long long sum=0;
+    scanf("%d",&a);
+    for (int i=0;i<a;i++)
+{
+        int num;
+     scanf("%d",&num);
+     sum+= num;
+
+    }
+
+    printf("%lld",sum);
+
+
+
+    return 0;
+}

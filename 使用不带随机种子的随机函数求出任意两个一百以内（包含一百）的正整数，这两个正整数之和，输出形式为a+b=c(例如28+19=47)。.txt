@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+
+   int num1 = rand ()%101;
+   int num2 = rand ()%101;
+   int sum = num1 + num2;
+    printf("%d+%d=%d",num1,num2,sum);
+
+}

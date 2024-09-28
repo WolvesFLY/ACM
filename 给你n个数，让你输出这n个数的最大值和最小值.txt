@@ -1,0 +1,33 @@
+引入初始值的最大最小定义，判断时，最大值的储存器取最小，最小值的储存器取最大，以为不知道会不会输入什么奇怪的最值。
+#include<stdio.h>
+#include<limits.h>
+int main()
+{
+
+    long long n,num2=LLONG_MIN,num3=LLONG_MAX;
+
+    scanf("%lld",&n);
+
+
+    for (int i=0; i<n; i++)
+    {
+        long long num1=1;
+        scanf("%lld",&num1);
+        if(num1>=num2)
+        {
+            num2=num1;
+        }
+        if(num1<=num3)
+        {
+
+            num3=num1;
+        }
+
+    }
+
+    printf("%lld %lld",num2,num3);
+
+
+
+    return 0;
+}

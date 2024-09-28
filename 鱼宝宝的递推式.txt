@@ -1,0 +1,25 @@
+演算过程如下:
+g(n)=|an*an-an-1*an+1|
+=|an*an -an-1*(an-1+an)|
+=|(an-1+an-2)*(an-1+an-2)-an-1*an-1-an-1*(an-1+an-2)
+=|-an-1*an-1+an-1*an-2+an-2*an-2|
+=|an-1*an-1-an-2*an-2-an-2*an-1|
+=g(n-1)
+=|a2*a2-a1*a1-a1*a2|=1
+如果使用递推公式求斐波那契数列第n项,
+时间复杂度为O(n),题目给出的数据范围会造成超
+时。
+算了一下，所以的答案都是1，如果用for来找的话，数字一大就会超时。
+#include<stdio.h>
+int main()
+{
+    int T;
+    scanf("%d",&T);
+    while(T--)
+    {
+        long long n;
+        scanf("%lld",&n);
+        printf("1\n");
+    }
+return 0;
+}

@@ -1,0 +1,34 @@
+e这个变量定义了多次，容易混用。
+#include<stdio.h>
+int main()
+{
+    int  T;
+    scanf("%d",&T);
+    long long E[T];
+    for(int i=0;i<T;i++)
+{
+    long long t,x,y;
+    int a,b,c,d,e,f,g,h;
+    scanf("%lld",&t);
+   a=t/10000000;
+   b=t/1000000%10;
+   c=t/100000%10;
+   d=t/10000%10;
+   e=t/1000%10;
+   f=t/100%10;
+   g=t/10%10;
+   h=t%10;
+   x=a*1000+c*100+f*10+h;
+   y=g*1000+b*100+d*10+e;
+   E[i]=x+y;
+}
+    for (int j=0;j<T;j++)
+    {
+      printf("%lld\n",E[j]);
+    }
+
+
+
+return 0;
+}
+

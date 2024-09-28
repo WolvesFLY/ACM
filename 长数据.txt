@@ -1,0 +1,17 @@
+题目描述
+给你两个数a和b，让你计算a*b的值
+输入
+每一行输入两个整数a和b
+数据范围：1<=a,b<=1000000
+输出
+对于每一组测试数据，输出对应答案
+#include<stdio.h>
+int main()
+{
+    long long a,b;
+    long long c;
+    scanf("%lld %lld",&a,&b);
+    c=a*b;
+printf("%lld",c);
+return 0;
+}

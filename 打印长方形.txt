@@ -1,0 +1,58 @@
+#include<stdio.h>
+
+int main()
+{
+    int n,m;
+    scanf("%d%d",n,m);
+    for(int i = 0; i<n; i++)
+        for(int j = 0; j<m; i++)
+            printf("*");
+    return 0;
+}
+错哪了
+
+
+
+你的代码中有几个错误，我将逐一指出并提供修正后的代码。
+
+scanf 函数的参数：在 scanf 函数中，你需要提供变量的地址，而不是它们的值。因此，你应该使用 &n 和 &m 而不是 n 和 m。
+
+内层循环的控制变量：在内层循环中，你错误地使用了 i++ 而不是 j++。这会导致内层循环不执行，因为 i 会不断增加，而条件是 j < m。
+
+打印星号的位置：在内层循环中，你应该在每次迭代后打印一个星号，并且应该在内层循环结束后换行，以形成正确的图案。
+
+修正后的代码如下：
+
+c
+#include <stdio.h>
+
+int main() {
+    int n, m;
+    scanf("%d%d", &n, &m); // 修正：使用 & 来获取变量的地址
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) { // 修正：使用 j++ 来控制内层循环
+            printf("*");
+        }
+        printf("\n"); // 在每行结束后添加换行符
+    }
+
+    return 0;
+}
+这段代码将正确地读取两个整数 n 和 m，然后打印一个由 n 行组成的图案，每行有 m 个星号。每行结束后，会打印一个换行符来开始新的一行。
+#include<stdio.h>
+
+int main()
+{
+    int n,m;
+    scanf("%d%d",&n,&m);
+    for(int i = 0; i<n; i++)
+    {
+        for(int j = 0; j<m; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}

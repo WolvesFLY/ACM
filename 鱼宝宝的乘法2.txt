@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    long long a,b;
+    int t;
+    scanf("%d",&t);
+     long long e[t];
+    for (int i=0; i<t; i++)
+    {
+        scanf("%lld%lld",&a,&b);
+        e[i]=a*b;
+    }
+    for (int j=0;j<t;j++)
+    {
+        printf("%lld\n",e[j]);
+
+    }
+return 0;
+}
+

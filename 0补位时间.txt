@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    long long a,b,c;
+    scanf("%lld",&a);
+    b=a/60;
+    c=a%60;
+
+    printf("%02lld:%02lld",b,c);
+
+    return 0;
+
+}
